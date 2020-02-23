@@ -3,11 +3,11 @@ import React from "react";
 class IdSearch extends React.Component{
         readId(event){
         event.preventDefault();
-
+        let pid = document.querySelector("#pid");
         fetch("http://localhost:80/id/" + pid.value).then((res) =>{
             return res.json();
         }).then((processed) =>{
-            let response = document.querySelector("#reportarea");
+            let response = document.querySelector("#reportingArea");
             if((processed.error)){
                 response.innerHTML = processed.error;
             }

@@ -3,11 +3,11 @@ import React from "react";
 class NameSearch extends React.Component{
     readName(event){
         event.preventDefault();
-
+        let pname = document.querySelector("#pname");
         fetch("http://localhost:80/name/" + pname.value).then((res) =>{
             return res.json();
         }).then((processed) =>{
-            let response = document.querySelector("#reportarea");
+            let response = document.querySelector("#reportingArea");
             if((processed.error)){
                 response.innerHTML = processed.error;
             }

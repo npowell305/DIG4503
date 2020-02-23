@@ -4,7 +4,7 @@ const port = 80;
 
 const cors = require("cors");
 
-const Chalk = require("Chalk");
+const chalk = require("Chalk");
 const Pokemon = require('json-pokemon');
 
 App.use(cors());

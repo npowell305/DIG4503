@@ -6,6 +6,7 @@
     function name(event){
         event.preventDefault();
         //looking for pokemon by name
+        let pname = document.querySelector("#pname");
         fetch("/name/" + pname.value).then((res) =>{
             return res.json();
         }).then((processed) =>{
@@ -21,7 +22,7 @@
     //looking for the pokemon by their id number
     function id(event){
         event.preventDefault();
-
+        let pid = document.querySelector("#pid");
         fetch("/id/" + pid.value).then((res) =>{
             return res.json();
         }).then((processed) =>{
