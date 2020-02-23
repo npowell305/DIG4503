@@ -2,9 +2,14 @@ const Express = require("express");
 const App = Express();
 const port = 80;
 
+const cors = require("cors");
+
 const Chalk = require("Chalk");
 const Pokemon = require('json-pokemon');
 
+App.use(cors());
+
+App.get("/", Express.static("client/build"));
 
 App.get("/name/:name", (req, res) => {
     let result = {"error": "No Pokemon Found"};
@@ -49,4 +54,3 @@ App.get("/id/:id", (req, res) => {
 App.listen(port, () => {
     console.log("Server running!");
 });
-
