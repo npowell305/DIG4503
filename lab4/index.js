@@ -2,8 +2,8 @@ const Express = require("express");
 const App = Express();
 const port = 80;
 
-const Person = require("./Person.js");
-const faker = require('faker');
+const Chalk = require("Chalk");
+const Pokemon = require('json-pokemon');
 
 let people = [];
 
@@ -45,9 +45,10 @@ App.get("/people/color/:color", (req, res) => {
     }
 
     }
-    res,send(result);
+    res.send(result);
 });
 
 App.listen(port, () => {
     console.log("Server running!");
 });
+
