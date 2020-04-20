@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -24,10 +21,14 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home > Bio - Nicholas Powell</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Istok+Web|Noto+Sans|Permanent+Marker|Source+Sans+Pro" rel="stylesheet">
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript></noscript>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -39,5 +40,40 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+
+<header>
+	<img src="img/logo.jpg" alt="Ninth Street North logo" class="logo">
+</header>
+
+<!-- this is for the tag line -->
+<section class="home-hero">
+	<div class="container">
+		<h1 class="title"> The Ninth Street North Collective Company.
+			<span>clean. minimal. simple.</span>
+		</h1>
+	</div>
+</section>
+
+<!-- the home class and textbox is for the floating box of text and the photo -->
+<div class="container">
+	<section class="home-about">
+
+		<div class="home-about-textbox">
+			<h2>BIO</h2>
+			<p></p>
+			<p>We are the Ninth Street North Collective Company & Design Group. A collective agency consisting of our streetwear brand, record label and design group.</p> 
+			<p>Our streetwear brand is "FKN GNXRLY", Our record label is "9th ST N Records" and our design branch handles projects from websites to branding and everything inbetween.</p>
+      <p>The leader and frontrunner of this operation is ran by founder & owner, Nicholas Powell. I'm a designer from Orlando, FL and use a variety of tools to work with but proficient in the following: Adobe Illustrator CC, Adobe Photoshop CC, Adobe Indesign CC and front end design.</p>
+		</div>	
+	</section>
+</div>
+
+<!-- glad i got rid of the footer this looks better imo this for the social media buttons -->
+<section class="cta">
+	
+		<copyright>&copy; The Ninth Street North Collective Company 2018</copyright>
+</section>
+
+</body>
+
 </html>
